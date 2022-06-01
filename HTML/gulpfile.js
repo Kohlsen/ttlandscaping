@@ -26,7 +26,7 @@ var gulp         = require('gulp'),
 			fonts:  'dist/fonts/'
 		},
 		src: {
-			html:  ['src/html/**/*.html','!src/html/template/*.html'],
+			html:  ['src/*.html','!src/html/template/*.html'],
 			js:    ['src/js/lib/device.js', 'src/js/lib/jquery-2.2.4.js', 'src/js/main.js'],
 			style:  'src/style/main.scss',
 			img:    'src/img/**/*.*',
@@ -62,7 +62,7 @@ gulp.task('html:build', function () {
 			basepath: '@file',
 			indent: true
 		}))
-		.pipe(gulp.dest(path.dist.html));
+		.pipe(gulp.dest(`dist/`));
 });
 
 gulp.task('js:build', function ()

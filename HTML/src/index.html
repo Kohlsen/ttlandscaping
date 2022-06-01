@@ -1,54 +1,72 @@
-@@include('../template/document_start.html')
-	<body class="page page-home">
+<!DOCTYPE html>
+<html class="no-js" lang="en" style="overflow: hidden scroll;">
+
+	<head>
+		<title>Top Tier Landscaping</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#4A8B71" />
+		<meta name="msapplication-navbutton-color" content="#4A8B71" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#4A8B71" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- CSS
+		================================================== -->
+		<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Poppins:300,400,500,600,700', 'Raleway:400,400i,500,500i,700,700i'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + 
+				'://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement;
+			_html.className = _html.className.replace("no-js","js");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+	<body class="page page-landing">
 
 		<!-- start top bar -->
-		<div id="top-bar" class="top-bar--style-1">
+		<div id="top-bar" class="top-bar--style-3">
 			<div class="container">
-				<a id="top-bar__logo" class="site-logo" href="index.html">AGRICOM</a>
+				<a id="top-bar__logo" class="site-logo" href="index.html">Top Tier Landscaping</a>
 
 				<a id="top-bar__navigation-toggler" href="javascript:void(0);"><span></span></a>
 
 				<nav id="top-bar__navigation" role="navigation">
-					<ul>
-						<li class="current">
-							<a href="javascript:void(0);">Home</a>
-
-							<div class="submenu">
-								<ul>
-									<li class="current"><a href="index.html">Home Style 1</a></li>
-									<li><a href="../style_2/index.html" target="_blank">Home Style 2</a></li>
-									<li><a href="../landing/index.html" target="_blank">One Page</a></li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a href="javascript:void(0);">Pages</a>
-
-							<div class="submenu">
-								<ul>
-									<li><a href="about.html">about</a></li>
-									<li><a href="products.html">products</a></li>
-									<li><a href="product_case.html">product case</a></li>
-									<li><a href="404.html">404 page</a></li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a href="javascript:void(0);">Gallery</a>
-
-							<div class="submenu">
-								<ul>
-									<li><a href="gallery_1.html">2 Columns</a></li>
-									<li><a href="gallery_2.html">3 Columns</a></li>
-									<li><a href="gallery_3.html">4 Columns</a></li>
-									<li><a href="gallery_4.html">Masonry</a></li>
-									<li><a href="gallery_5.html">Masonry 2</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
-						<li class="li-btn"><a class="custom-btn primary" href="#spy-get-in-touch">Get in touch</a></li>
+					<ul class="nav">
+						<li><a href="#spy-about">About</a></li>
+						<li><a href="#spy-services">Services</a></li>
+						<!-- <li><a href="#spy-progress">progress</a></li> -->
+						<li><a href="#spy-offer">Portfolio</a></li>
+						<!-- <li><a href="#spy-gallery">gallery</a></li> -->
+						<!-- <li><a href="#spy-blog">G</a></li> -->
+						<li class="li-btn"><a class="custom-btn primary" href="#spy-get-in-touch">Contact US</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -65,16 +83,38 @@
 			</div>
 
 			<div id="start-screen_content-container">
+				<div class="start-screen__content start-screen__content-second">
+					<div class="v-align">
+						<div class="v-middle">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-xl-10">
+										<p class="title">Top Tier</p>
+
+										<p class="subtitle">
+											Landscaping
+										</p>
+
+										<p>
+											<a class="custom-btn big primary" href="#">Discover</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="start-screen__content start-screen__content-first">
 					<div class="v-align">
 						<div class="v-middle">
 							<div class="container">
-								<div class="row justify-content-center text-center">
-									<div class="col-12 col-xl-10">
-										<p class="title">Agricom</p>
+								<div class="row justify-content-start text-left">
+									<div class="col-12">
+										<p class="title">Hardscaping</p>
 
 										<p class="subtitle">
-											agro company
+											Done by the best
 										</p>
 
 										<p>
@@ -91,12 +131,12 @@
 					<div class="v-align">
 						<div class="v-middle">
 							<div class="container">
-								<div class="row justify-content-md-center text-center">
-									<div class="col-12 col-lg-10 col-xl-8">
-										<p class="title">Fruits</p>
+								<div class="row justify-content-md-start text-left">
+									<div class="col-12">
+										<p class="title">Landscaping</p>
 
 										<p>
-											Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically
+											Contact us and get a free estimate today.
 										</p>
 
 										<p>
@@ -164,7 +204,7 @@
 					z-index: 3;
 				}
 
-				#vegas-slider .vegas-control__btn:hover { color: #f1cf69; }
+				#vegas-slider .vegas-control__btn:hover { color: #75001d; }
 
 				#vegas-control__prev { left: -10px; }
 				#vegas-control__next { right: -10px; }
@@ -188,8 +228,8 @@
 					height: 15px;
 					margin: 0 5px;
 					cursor: pointer;
-					background-color: #f1cf69;
-					box-shadow: 0 0 0 0 #4a8b71 inset;
+					background-color: #fff;
+					box-shadow: 0 0 0 0 #75001d inset;
 					border-radius: 50%;
 					-webkit-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
 					-moz-transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -201,7 +241,7 @@
 				#vegas-slider .vegas-dots a:hover,
 				#vegas-slider .vegas-dots a.active
 				{
-					box-shadow: 0 0 0 8px #4a8b71 inset;
+					box-shadow: 0 0 0 8px #75001d inset;
 				}
 
 				#vegas-slider .vegas-dots a.active { cursor: default; }
@@ -284,8 +324,8 @@
 
 				.start-screen__content .custom-btn.primary
 				{
-					background-color: #f1cf69;
-					color: #504935;
+					background-color: #75001d;
+					color: #fff;
 				}
 
 				.start-screen__content .custom-btn.primary:hover,
@@ -308,7 +348,7 @@
 
 				/* third slide */
 				.start-screen__content-third { }
-				.start-screen__content-third .title { color: #282828; }
+				.start-screen__content-third .title { color: #fff; }
 				.start-screen__content-third .subtitle {}
 
 				@media only screen and (min-width: 576px)
@@ -367,7 +407,7 @@
 
 					.start-screen__content .title
 					{
-						font-size: 130px;
+						font-size: 120px;
 						letter-spacing: 20px;
 					}
 				}
@@ -376,8 +416,8 @@
 				{
 					.start-screen__content .title
 					{
-						font-size: 150px;
-						letter-spacing: 30px;
+						font-size: 120px;
+						letter-spacing: 20px;
 					}
 				}
 			</style>
@@ -407,16 +447,20 @@
 								var slider = $('#vegas-slider'),
 									slides = [
 										{
+											name: "img 4",
+											src: 'img/home_img/tt2.JPG'
+										},
+										{
 											name: "img 1",
-											src: '../img/home_img/img_1.jpg'
+											src: 'img/home_img/tt3.jpg'
 										},
 										{
 											name: "img 2",
-											src: '../img/home_img/img_2.jpg'
+											src: 'img/home_img/tt6.jpg'
 										},
 										{
 											name: "img 3",
-											src: '../img/home_img/img_3.jpg'
+											src: 'img/home_img/tt5.JPG'
 										}
 									],
 									slider_content = $('.start-screen__content'),
@@ -430,7 +474,7 @@
 									transitionDuration: 4000,
 									delay: 5000,
 									slides: slides,
-									overlay: '../img/home_img/overlays/04.png',
+									overlay: '/img/home_img/overlays/04.png',
 									init: function (globalSettings) {
 
 										if ( this.data('dots') == true ) {
@@ -489,78 +533,56 @@
 
 		<main role="main">
 			<!-- start section -->
-			<section class="section">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-4 col-xl-3">
-							<div class="col-MB-30">
-								<h2>AgriCom Farm Ecology Products</h2>
-							</div>
-						</div>
+			<section class="section section--no-pt section--no-pb">
+				<div class="container-fluid">
+					<div class="products--style-2">
+						<div class="products__inner">
+							<div class="row no-gutters">
+								<div class="col-12 col-md-6 col-lg-4">
+									<div class="product__item">
+										<figure>
+											<img src="img/blank.gif" style="background-image: url('img/gall_img/2_col/18.jpg');" alt="demo" />
+										</figure>
 
-						<div class="col-12 col-lg-8 col-xl-9">
-							<div class="col-MB-30">
-								<h4>
-									Smells racy free announcing than durable zesty smart exotic far feel. Screamin' affordable secret way absolutely.
-								</h4>
+										<div class="product__item__description">
+											<div class="product__item__description__inner">
+												<h2 class="product__item__title">Land<br />Scaping</h2>
 
-								<p>
-									Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically 
-								</p>
-							</div>
-
-							<div class="feature feature--style-1">
-								<div class="feature__inner">
-									<div class="row justify-content-between">
-										<!-- start item -->
-										<div class="col">
-											<div class="feature__item">
-												<i class="feature__item__ico feature__item__ico--1"></i>
-
-												<h3 class="feature__item__title  h4">Agriculture<br />Products</h3>
+												Works discount secure
 											</div>
 										</div>
-										<!-- end item -->
+									</div>
+								</div>
 
-										<!-- start item -->
-										<div class="col">
-											<div class="feature__item">
-												<i class="feature__item__ico feature__item__ico--2"></i>
+								<div class="col-12 col-md-6 col-lg-4">
+									<div class="product__item">
+										<figure>
+											<img src="img/blank.gif" style="background-image: url('img/gall_img/4_col/18.jpg');" alt="demo">
+										</figure>
 
-												<h3 class="feature__item__title  h4">Fresh<br />Vegatables</h3>
+										<div class="product__item__description">
+											<div class="product__item__description__inner">
+												<h2 class="product__item__title">Hard<br />Scaping</h2>
+
+												First superior full-bodied drink
 											</div>
 										</div>
-										<!-- end item -->
+									</div>
+								</div>
 
-										<!-- start item -->
-										<div class="col">
-											<div class="feature__item">
-												<i class="feature__item__ico feature__item__ico--3"></i>
+								<div class="col-12 col-md-6 col-lg-4">
+									<div class="product__item">
+										<figure>
+											<img src="img/blank.gif" style="background-image: url('img/gall_img/4_col/17.jpg');" alt="demo">
+										</figure>
 
-												<h3 class="feature__item__title  h4">Different<br />Livestock</h3>
+										<div class="product__item__description">
+											<div class="product__item__description__inner">
+												<h2 class="product__item__title">Outdoor<br />Patio</h2>
+
+												Odor to yummy high racy bonus soaking
 											</div>
 										</div>
-										<!-- end item -->
-
-										<!-- start item -->
-										<div class="col">
-											<div class="feature__item">
-												<i class="feature__item__ico feature__item__ico--4"></i>
-
-												<h3 class="feature__item__title  h4">Farm<br />Factory</h3>
-											</div>
-										</div>
-										<!-- end item -->
-
-										<!-- start item -->
-										<div class="col">
-											<div class="feature__item">
-												<i class="feature__item__ico feature__item__ico--5"></i>
-
-												<h3 class="feature__item__title  h4">Modern<br />Technique</h3>
-											</div>
-										</div>
-										<!-- end item -->
 									</div>
 								</div>
 							</div>
@@ -571,439 +593,603 @@
 			<!-- end section -->
 
 			<!-- start section -->
-			<section class="section section--no-pt section--custom-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="col-MB-30">
-								<img class="img-fluid" src="../img/slogan.png" alt="demo" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 			<!-- end section -->
 
 			<!-- start section -->
-			<section class="section section--custom-2">
+			<a id="spy-about" class="ancor"></a>
+			<section class="section section--screen section--background  section-about  jarallax" data-speed="0.5" data-img-position="50% 30%" style="background-image: url(img/img_8.jpg);">
+
+ 				<div class="pattern" style="opacity: .5"></div>
+
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-8">
 							<div class="col-MB-30">
-								<h2>The Largest Crop Ever</h2>
-
-								<h4>Smells racy free announcing than durable zesty smart exotic far feel. Screamin' affordable secret way absolutely.</h4>
+								<h2 class="section-about__title">About Top Tier Landscaping</h2>
 							</div>
+						</div>
+					</div>
 
-							<p>
-								Stimulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. 
-							</p>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-MB-15">
+								<div class="col-MB-30">
+									<h4>Customer Satisfaction Is Our #1 Priority - Here at Top Tier Landscaping we pride ourselves in excellent customer service and outstanding quality of work.</h4>
+								</div>
 
-							<p>
-								Stimulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior 
-							</p>
+								<!-- <p>
+									Stimulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. 
+								</p>
 
-							<p class="d-lg-none"><img class="img-fluid" src="../img/img_7.jpg" alt="demo" /></p>
+								<p>
+									Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior 
+								</p> -->
+							</div>
+						</div>
 
-							<p class="col-lg-MB-20">&nbsp;</p>
+						<!-- <div class="col-md-6">
+							<div class="col-MB-15">
+								<p>
+									Sale thirsty colossal humongous look splash cool. Does our calories anti win classic ultimate remarkable kids flexible. Every fun generous flip stimulates quick available dry try. Durable messy and and monster goodness sparkling youthful seasoned double soaking look. Big luscious sporty mega leading full guaranteed plush outstanding dazzling.
+								</p>
 
+								<p>
+									Luscious classic soaking happy kids this buy chocolatey spectacular does get effervescent. Traditional absolutely tighter ultimate appreciate comfort plush full-bodied by quality keen. Finest appearance aromatic 
+								</p>
+							</div>
+						</div> -->
+
+						<!-- <div class="col-12">
+							<p>&nbsp;</p>
 							<p>
 								<a class="custom-btn primary big" href="#">Find out more</a>
 							</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
-
-				<div class="img-place" style="background-image: url(../img/img_7.jpg);"></div>
 			</section>
 			<!-- end section -->
-
-			<!-- start section -->
-			<section class="section section--background-base-light section--background-logo">
+			<a id="spy-services" class="ancor"></a>
+			<section class="section section--screen  section-services">
 				<div class="container">
-					<div class="section-heading section-heading--left">
-						<h2 class="title">The Openfield Timeline</h2>
-					</div>
+					<div class="row">
+						<div class="col-xl-4">
+							<div class="col-MB-30">
+								<h2>Top Tier<br />Services</h2>
 
-					<div class="timeline">
-						<div class="timeline__inner">
-							<div class="row">
-								<!-- start item -->
-								<div class="col-md-3">
-									<div class="timeline__item">
-										<p class="timeline__year">1907</p>
+								<h4>Smells racy free announcing than durable zesty smart exotic far feel. </h4>
 
-										<h4 class="timeline__title">Smells Racy Free Announcing</h4>
+								<p>
+									Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. 
+								</p>
+							</div>
+						</div>
+						
 
-										<p>
-											Vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes
-										</p>
+						<div class="col-xl-8">
+							<div class="feature feature--style-3">
+								<div class="feature__inner">
+									<div class="row justify-content-between">
+										<!-- start item -->
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="feature__item">
+												<i class="feature__item__ico feature__item__ico--1"></i>
+
+												<h3 class="feature__item__title  h4">Patios. Walkways & Outdoor Living</h3>
+
+												<p>
+													We offer Paver & Concrete Patios, BBQ Kitchens, Pergolas, Firepits, Seating Walls & More
+												</p>
+											</div>
+										</div>
+										<!-- end item -->
+
+										<!-- start item -->
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="feature__item">
+												<i class="feature__item__ico feature__item__ico--2"></i>
+
+												<h3 class="feature__item__title  h4">Retaining Walls</h3>
+
+												<p>
+													We offer retaining walls of all sizes made from either precast concrete blocks or natural stone
+												</p>
+
+									
+											</div>
+										</div>
+										<!-- end item -->
+
+										<!-- start item -->
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="feature__item">
+												<i class="feature__item__ico feature__item__ico--3"></i>
+
+												<h3 class="feature__item__title  h4">Landscaping Design & Installation</h3>
+
+												<p>
+													We offer design and installation services for all your landscaping needs
+												</p>
+
+											</div>
+										</div>
+										<!-- end item -->
+
+										<!-- start item -->
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="feature__item">
+												<i class="feature__item__ico feature__item__ico--4"></i>
+
+												<h3 class="feature__item__title  h4">Irrigation</h3>
+
+												<p>
+													New Installs & Repairs
+												</p>
+
+											</div>
+										</div>
+										<div class="col-12 col-sm-6 col-lg-3">
+											<div class="feature__item">
+												<i class="feature__item__ico feature__item__ico--4"></i>
+
+												<h3 class="feature__item__title  h4">Sod & Seed Installation</h3>
+
+
+											</div>
+										</div>
+										<!-- end item -->
 									</div>
 								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-md-3">
-									<div class="timeline__item">
-										<p class="timeline__year">1994</p>
-
-										<h4 class="timeline__title">Grainfarmers<br />Formed</h4>
-
-										<p>
-											Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. 
-										</p>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-md-3">
-									<div class="timeline__item">
-										<p class="timeline__year">2001</p>
-
-										<h4 class="timeline__title">Group Cereals and Lingrain Merge</h4>
-
-										<p>
-											Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink.
-										</p>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-md-3">
-									<div class="timeline__item">
-										<p class="timeline__year">2016</p>
-
-										<h4 class="timeline__title">Aquired Countrywide Farmers</h4>
-
-										<p>
-											First superior full-bodied drink. Like outstanding odor economical deal clinically 
-										</p>
-									</div>
-								</div>
-								<!-- end item -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- end section -->
 
 			<!-- start section -->
-			<section class="section section--no-pt section--no-pb section--background-base-light">
-				<div class="container">
-					<div class="gallery gallery--style-3">
-						<div class="gallery__inner">
-							<div class="row no-gutters">
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3 align-self-sm-center">
-									<div class="gallery__item gallery__item--text">
-										<h2>Our Products</h2>
-
-										<p>
-											Appetizing luscious savor hot senses. Effervescent the secure special. Kids spicey chance
-										</p>
-
-										<a class="gallery-more-link" href="gallery_3.html">VIEw gallery</a>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/2.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="http://player.vimeo.com/video/95974049" data-gallery="gall">
-													<span class="gallery__item__title">Our Farm</span>
-													<span class="gallery__item__subtitle">Life Style</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/3.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/3.jpg" data-gallery="gall">
-													<span class="gallery__item__title">Awesome Fields</span>
-													<span class="gallery__item__subtitle">Crops</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/4.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/4.jpg" data-gallery="gall">
-													<span class="gallery__item__title">Fresh Grape</span>
-													<span class="gallery__item__subtitle">Fruits</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/5.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/5.jpg" data-gallery="gall">
-													<span class="gallery__item__title">Sweet Redis</span>
-													<span class="gallery__item__subtitle">Vegatables</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/6.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/6.jpg#" data-gallery="gall">
-													<span class="gallery__item__title">Huge Wheat</span>
-													<span class="gallery__item__subtitle">Crops</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/7.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/7.jpg" data-gallery="gall">
-													<span class="gallery__item__title">Hot Papper</span>
-													<span class="gallery__item__subtitle">Vegatables</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-
-								<!-- start item -->
-								<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-									<div class="gallery__item">
-										<div class="gallery__item__inner">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/gall_img/4_col/8.jpg');" alt="demo" />
-
-												<a class="gallery__item__description" href="../img/gall_img/4_col/8.jpg" data-gallery="gall">
-													<span class="gallery__item__title">Beautiful Carrots</span>
-													<span class="gallery__item__subtitle">Vegatables</span>
-												</a>
-											</figure>
-										</div>
-									</div>
-								</div>
-								<!-- end item -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end section -->
-
-			<!-- start section -->
-			<section class="section">
-				<div class="container">
-					<div class="section-heading section-heading--left">
-						<h2 class="title">Blog Posts</h2>
-					</div>
-
-					<div class="blog blog--style-2">
-						<div class="row align-items-md-center">
-							<!-- start item -->
-							<div class="col-xl-6">
-								<div class="blog__item">
-									<div class="row align-items-md-center">
-										<div class="col-md-6 col-lg-8 col-xl-6">
-											<div class="blog__entry">
-												<div class="blog__post-date">
-													<span>23</span>
-													<span>JUL<br />2016</span>
-												</div>
-
-												<h3 class="blog__entry__title"><a href="blog_post.html">Agriculture Products</a></h3>
-
-												<span class="blog__entry__meta">Cows | 4 Comments</span>
-
-												<p>
-													Appetizing luscious savor hot senses. Effervescent the secure special. Kids spicey chance excellent proven too
-												</p>
-											</div>
-										</div>
-
-										<div class="col-md-6 col-lg-4 col-xl-6">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/blog_img/1.jpg');" alt="demo">
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- end item -->
-
-							<!-- start item -->
-							<div class="col-xl-6">
-								<div class="blog__item">
-									<div class="row align-items-md-center">
-										<div class="col-md-6 col-lg-8 col-xl-6">
-											<div class="blog__entry">
-												<div class="blog__post-date">
-													<span>07</span>
-													<span>APR<br />2016</span>
-												</div>
-
-												<h3 class="blog__entry__title"><a href="blog_post.html">Crispy citrus exclusive</a></h3>
-
-												<span class="blog__entry__meta">Cows | 4 Comments</span>
-
-												<p>
-													Appetizing luscious savor hot senses. Effervescent the secure special. Kids spicey chance excellent proven too
-												</p>
-											</div>
-										</div>
-
-										<div class="col-md-6 col-lg-4 col-xl-6">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/blog_img/4.jpg');" alt="demo">
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- end item -->
-
-							<!-- start item -->
-							<div class="col-xl-6">
-								<div class="blog__item">
-									<div class="row align-items-md-center">
-										<div class="col-md-6 col-lg-8 col-xl-6">
-											<div class="blog__entry">
-												<div class="blog__post-date">
-													<span>19</span>
-													<span>JUL<br />2016</span>
-												</div>
-
-												<h3 class="blog__entry__title"><a href="blog_post.html">Waxy latest also drink</a></h3>
-
-												<span class="blog__entry__meta">Cows | 4 Comments</span>
-
-												<p>
-													Appetizing luscious savor hot senses. Effervescent the secure special. Kids spicey chance excellent proven too
-												</p>
-											</div>
-										</div>
-
-										<div class="col-md-6 col-lg-4 col-xl-6">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/blog_img/3.jpg');" alt="demo">
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- end item -->
-
-							<!-- start item -->
-							<div class="col-xl-6">
-								<div class="blog__item">
-									<div class="row align-items-md-center">
-										<div class="col-md-6 col-lg-8 col-xl-6">
-											<div class="blog__entry">
-												<div class="blog__post-date">
-													<span>01</span>
-													<span>APR<br />2016</span>
-												</div>
-
-												<h3 class="blog__entry__title"><a href="blog_post.html">Agriculture Products</a></h3>
-
-												<span class="blog__entry__meta">Cows | 4 Comments</span>
-
-												<p>
-													Appetizing luscious savor hot senses. Effervescent the secure special. Kids spicey chance excellent proven too
-												</p>
-											</div>
-										</div>
-
-										<div class="col-md-6 col-lg-4 col-xl-6">
-											<figure>
-												<img src="../img/blank.gif" style="background-image: url('../img/blog_img/2.jpg');" alt="demo">
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- end item -->
-						</div>
-
-						<div class="text-center">
-							<a id="blog-more-btn" class="custom-btn big primary" href="blog.html">See all posts</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end section -->
-
-			<!-- start section -->
-			<section class="section jarallax" data-speed="0.4" data-img-position="50% 50%" style="background-image: url('../img/bg/bg_9.jpg');">
+			<section class="section" style="background-color: #75001d;">
 				<div class="container">
 					<div class="section-heading section-heading--center section-heading--white">
-						<h2 class="title">What People Says</h2>
+						<h2 class="title">What People are Saying</h2>
 					</div>
 
-					@@include('../template/feedback_1.html')
+					<div class="row justify-content-md-center">
+						<div class="col-lg-10">
+							<div class="feedbacks feedbacks--slider feedbacks--style-1">
+								<div class="owl-carousel owl-theme">
+									<!-- start item -->
+									<article class="feedback__item">
+										<div class="feedback__author">
+											<div class="feedback__author__photo  mx-auto">
+												<img class="circled  img-fluid" src="img/users_photos/stock.jpg" height="140" width="140" alt="demo" />
+											</div>
+
+											<h4 class="feedback__author__name">Jenna Clark</h4>
+
+											<p class="feedback__author__position">5 Star Google review customer</p>
+										</div>
+
+										<div class="feedback__text">
+											<p>
+												"Jimmy was extremely helpful answering all my questions and going over all the details of the work they would be doing. He has been extremely responsive and has taken a lot of time to carefully plan out the design for our yard. We are really happy with the work they have done. He continues to be responsive now even with questions I still have or ideas for more work we are looking to do with them agin soon. We will definitely use Top Tier Landscaping again! Thank you for your hard work!!"
+											</p>
+										</div>
+									</article>
+									<!-- end item -->
+
+									<!-- start item -->
+									<article class="feedback__item">
+										<div class="feedback__author">
+											<div class="feedback__author__photo  mx-auto">
+												<img class="circled  img-fluid" src="img/users_photos/stock.jpg" height="140" width="140" alt="demo" />
+											</div>
+
+											<h4 class="feedback__author__name">James Groccia</h4>
+
+											<p class="feedback__author__position">5 star Google review customer</p>
+										</div>
+
+										<div class="feedback__text">
+											<p>
+												"Jimmy and his crew did an outstanding job building a new patio under an exisiting porch. They worked tirelessly until the job was done. Pavers and retaining walls were installed well and look fabulous. Highly recommend Top Tier!"
+											</p>
+										</div>
+									</article>
+									<!-- end item -->
+
+									<!-- start item -->
+									<article class="feedback__item">
+										<div class="feedback__author">
+											<div class="feedback__author__photo  mx-auto">
+												<img class="circled  img-fluid" src="img/users_photos/stock.jpg" height="140" width="140" alt="demo" />
+											</div>
+
+											<h4 class="feedback__author__name">Michael Elliott</h4>
+
+											<p class="feedback__author__position">5 Star Google review customer</p>
+										</div>
+
+										<div class="feedback__text">
+											<p>
+												"Top Tier Landscaping did a great job. They were prompt and did excellent work. Their crew is friendly professional and cleans up after themselves. They made sure to ask questions and gave us exactly what we wanted. Highly recommended."
+											</p>
+										</div>
+									</article>
+									<!-- end item -->
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end section -->
 
+			<!-- start section -->	
+			<!-- end section -->
+
 			<!-- start section -->
-			<section class="section">
+			<a id="spy-offer" class="ancor"></a>
+			<section class="section section--screen  section-port">
 				<div class="container">
-					@@include('../template/partners.html')
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="col-MB-30">
+								<h2>Top Tier<br />Portfolio</h2>
+
+								<h4>Check out some of our past work! </h4>
+
+							</div>
+						</div>
+					</div>
+					<div class="products">
+						<div class="products__inner">
+							<div class="row no-gutters align-items-md-center">
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--text">
+										<i class="product__item__ico product__item__ico--1"></i>
+
+										<h3 class="product__item__title"><a href="product_case.html">The Crops</a></h3>
+
+										<p>
+											Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+										</p>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--image">
+										<img class="img-fluid" src="img/products_img/1.jpg" alt="demo" />
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+
+							<div class="row no-gutters align-items-md-center">
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--text">
+										<i class="product__item__ico product__item__ico--2"></i>
+
+										<h3 class="product__item__title"><a href="product_case.html">Fresh Vegatables</a></h3>
+
+										<p>
+											Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically feel durable. Lather each real. Quite one fresh. Delectable absorbent ordinary full-bodied out durable whopping value when. Coming supreme tropical dual locked-in sharpest effervescent zesty 
+										</p>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- end item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--image">
+										<img class="img-fluid" src="img/products_img/2.jpg" alt="demo" />
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+
+							<div class="row no-gutters align-items-md-center">
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--text">
+										<i class="product__item__ico product__item__ico--3"></i>
+
+										<h3 class="product__item__title"><a href="product_case.html">Different Livestock</a></h3>
+
+										<p>
+											Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus 
+										</p>
+									</div>
+								</div>
+
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--image">
+										<img class="img-fluid" src="img/products_img/3.jpg" alt="demo" />
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+
+							<div class="row no-gutters align-items-md-center">
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--text">
+										<i class="product__item__ico product__item__ico--4"></i>
+
+										<h3 class="product__item__title"><a href="product_case.html">Modern Technique</a></h3>
+
+										<p>
+											Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically feel durable. Lather each real. Quite one fresh. Delectable absorbent ordinary full-bodied out durable whopping value when. Coming supreme tropical dual
+										</p>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--image">
+										<img class="img-fluid" src="img/products_img/4.jpg" alt="demo" />
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+
+							<div class="row no-gutters align-items-md-center">
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--text">
+										<i class="product__item__ico product__item__ico--5"></i>
+
+										<h3 class="product__item__title"><a href="product_case.html">Farm Factory</a></h3>
+
+										<p>
+											Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy
+										</p>
+									</div>
+								</div>
+								<!-- end item -->
+
+								<!-- start item -->
+								<div class="col-md-6">
+									<div class="product__item product__item--image">
+										<img class="img-fluid" src="img/products_img/5.jpg" alt="demo" />
+									</div>
+								</div>
+								<!-- end item -->
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end section -->
 
+
+			<!-- end section -->
+
 			<!-- start section -->
-			@@include('../template/contact_1.html')
+
+								<!-- end item -->
+
+				
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-md-6 col-lg-4">
+									<div class="blog__item">
+										<figure>
+											<img src="/img/blank.gif" style="background-image: url('/img/blog_img/6.jpg');" alt="demo">
+										</figure>
+
+										<div class="blog__entry">
+											<span class="blog__entry__meta">Jul 19, 2016  /  4 Comments</span>
+
+											<h3 class="blog__entry__title  h4"><a href="blog_post.html">Fruits on Nutrition</a></h3>
+										</div>
+									</div>
+								</div> -->
+								<!-- end item -->
+
+			<!-- end section -->
+
+			<!-- start section -->
+			<!-- <section class="section">
+				<div class="container">
+					<div class="partners">
+						<div class="partners__inner">
+							<div class="row">
+								start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/1.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/2.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/3.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/4.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/5.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+
+								<!-- start item -->
+								<!-- <div class="col-6 col-sm-4 col-lg-2">
+									<img class="img-fluid" src="/img/partners_img/6.jpg" alt="demo" />
+								</div> -->
+								<!-- end item -->
+							<!-- </div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- end section -->
+
+			<!-- start section -->
+			<a id="spy-get-in-touch" class="ancor"></a>
+			<section class="section-contact">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="item map-container">
+								<!-- <div class="g_map" data-longitude="44.958309" data-latitude="34.109925" data-marker="/img/marker.png"></div> -->
+								<img class="img-fluid" src="img/service-map.png" alt="demo" />
+
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 bg-2">
+							<div class="item">
+								<header class="item__header">
+									<h2 class="item__title">Get In Touch</h2>
+
+									<p class="item__subtitle">Vinyl grown remarkable in survey wherever parents are it's. Mega bold action. Sold care</p>
+								</header>
+
+								<form class="f1 js-contact-form" action="#">
+									<label class="input-wrp">
+										<i class="fontello-user"></i>
+										<input class="textfield" type="text" placeholder="You name" name="name" />
+									</label>
+
+									<label class="input-wrp">
+										<i class="fontello-mail"></i>
+										<input class="textfield" type="text" placeholder="E-mail" name="email" />
+									</label>
+
+									<label class="input-wrp">
+										<i class="fontello-comment"></i>
+										<textarea class="textfield" placeholder="Comment" name="message"></textarea>
+									</label>
+
+									<div class="btn-wrp">
+										<button class="custom-btn long" type="submit" role="button">Send a message</button>
+									</div>
+
+									<div class="form__note"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- end section -->
 		</main>
 
 		<!-- start footer -->
-		@@include('../template/footer_1.html')
+		<footer id="footer" class="footer--style-3">
+			<div class="footer__inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-4">
+							<div class="footer__item">
+								<a class="site-logo" href="index.html">Top Tier Landscaping</a>
+
+								<p class="footer__copy">© 2022, TopTier Landscaping. All rights reserved.</p>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-lg-4">
+							<div class="footer__item">
+								<h3 class="footer__title">Contacts</h3>
+
+								<div class="company-contacts">
+									<address>
+										<p>
+											<i class="fontello-location"></i>
+											11675 S Strange Line Rd Olathe, KS 66062
+										</p>
+
+										<p>
+											<i class="fontello-phone-call"></i>
+											<a href="tel:913-553-1662">913-553-1662</a>
+										</p>
+
+										<p>
+											<i class="fontello-mail"></i>
+											<a href="mailto:jimmy@toptierlandscapingkc.com">jimmy@toptierlandscapingkc.com</a>
+										</p>
+									</address>
+
+									<div class="social-btns">
+										<div class="social-btns__inner">
+											<a class="fontello-facebook" href="https://www.facebook.com/Top-Tier-Landscaping-LLC-105704625102602" target="_blank"></a>
+											<a class="fontello-instagram" href="https://www.instagram.com/toptier_landscaping/" target="_blank"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- end footer -->
 
-@@include('../template/document_end.html')
+		<div id="btn-to-top-wrap">
+			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="1000"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+		<script type="text/javascript" src="js/main.min.js"></script>
+		<script type="text/javascript">
+			/*!
+			 * Bootstrap v3.3.5 (http://getbootstrap.com)
+			 * Copyright 2011-2016 Twitter, Inc.
+			 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+			 */
+			if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+function(t){"use strict";var s=t.fn.jquery.split(" ")[0].split(".");if(s[0]<2&&s[1]<9||1==s[0]&&9==s[1]&&s[2]<1||s[0]>2)throw new Error("Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3")}(jQuery),+function(t){"use strict";function s(e,i){this.$body=t(document.body),this.$scrollElement=t(t(e).is(document.body)?window:e),this.options=t.extend({},s.DEFAULTS,i),this.selector=(this.options.target||"")+" .nav li > a",this.offsets=[],this.targets=[],this.activeTarget=null,this.scrollHeight=0,this.$scrollElement.on("scroll.bs.scrollspy",t.proxy(this.process,this)),this.refresh(),this.process()}function e(e){return this.each(function(){var i=t(this),o=i.data("bs.scrollspy"),r="object"==typeof e&&e;o||i.data("bs.scrollspy",o=new s(this,r)),"string"==typeof e&&o[e]()})}s.VERSION="3.3.6",s.DEFAULTS={offset:10},s.prototype.getScrollHeight=function(){return this.$scrollElement[0].scrollHeight||Math.max(this.$body[0].scrollHeight,document.documentElement.scrollHeight)},s.prototype.refresh=function(){var s=this,e="offset",i=0;this.offsets=[],this.targets=[],this.scrollHeight=this.getScrollHeight(),t.isWindow(this.$scrollElement[0])||(e="position",i=this.$scrollElement.scrollTop()),this.$body.find(this.selector).map(function(){var s=t(this),o=s.data("target")||s.attr("href"),r=/^#./.test(o)&&t(o);return r&&r.length&&r.is(":visible")&&[[r[e]().top+i,o]]||null}).sort(function(t,s){return t[0]-s[0]}).each(function(){s.offsets.push(this[0]),s.targets.push(this[1])})},s.prototype.process=function(){var t,s=this.$scrollElement.scrollTop()+this.options.offset,e=this.getScrollHeight(),i=this.options.offset+e-this.$scrollElement.height(),o=this.offsets,r=this.targets,l=this.activeTarget;if(this.scrollHeight!=e&&this.refresh(),s>=i)return l!=(t=r[r.length-1])&&this.activate(t);if(l&&s<o[0])return this.activeTarget=null,this.clear();for(t=o.length;t--;)l!=r[t]&&s>=o[t]&&(void 0===o[t+1]||s<o[t+1])&&this.activate(r[t])},s.prototype.activate=function(s){this.activeTarget=s,this.clear();var e=this.selector+'[data-target="'+s+'"],'+this.selector+'[href="'+s+'"]',i=t(e).parents("li").addClass("active");i.parent(".dropdown-menu").length&&(i=i.closest("li.dropdown").addClass("active")),i.trigger("activate.bs.scrollspy")},s.prototype.clear=function(){t(this.selector).parentsUntil(this.options.target,".active").removeClass("active")};var i=t.fn.scrollspy;t.fn.scrollspy=e,t.fn.scrollspy.Constructor=s,t.fn.scrollspy.noConflict=function(){return t.fn.scrollspy=i,this},t(window).on("load.bs.scrollspy.data-api",function(){t('[data-spy="scroll"]').each(function(){var s=t(this);e.call(s,s.data())})})}(jQuery);
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var bodyNode = document.body || document.getElementsByTagName('body')[0],
+					nMenuToggler = document.getElementById('top-bar__navigation-toggler');
+					jMenuToggler = $(nMenuToggler),
+					TopBarHeight = 0;
+
+				if ( jMenuToggler.is(':visible') )
+				{
+					TopBarHeight = 71;
+
+					$(bodyNode).scrollspy({target: "#top-bar", offset: TopBarHeight});
+				}
+				else
+				{
+					TopBarHeight = 81;
+
+					$(bodyNode).scrollspy({target: "#top-bar", offset: TopBarHeight});
+				};
+			});
+		</script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='https://www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+		</script>
+	</body>
+</html>
