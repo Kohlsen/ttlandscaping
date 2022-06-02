@@ -15,6 +15,9 @@
 	{
 		padding-top: 30px;
 		padding-bottom: 30px;
+		h3 {
+			color: #fff !important
+		}
 	}
 
 	&--image {}
@@ -39,32 +42,37 @@
 
 		&--1:before
 		{
-			width: 50px;
-			background-image: url(../img/ico/ico_1.png);
+			width: 76px;
+			height: 77px;
+			background-image: url(../img/ico/003-paving.png)
 		}
 
 		&--2:before
 		{
-			width: 52px;
-			background-image: url(../img/ico/ico_2.png);
+			width: 76px;
+			height: 77px;
+			background-image: url(../img/ico/brick-wall.png)
 		}
 
 		&--3:before
 		{
-			width: 63px;
-			background-image: url(../img/ico/ico_3.png);
+			width: 76px;
+			height: 77px;			
+			background-image: url(../img/ico/planning.png)
 		}
 
 		&--4:before
 		{
-			width: 57px;
-			background-image: url(../img/ico/ico_4.png);
+			width: 76px;
+			height: 77px;			
+			background-image: url(../img/ico/001-irrigation-system.png)
 		}
 
 		&--5:before
 		{
-			width: 55px;
-			background-image: url(../img/ico/ico_5.png);
+			width: 76px;
+			height: 77px;			
+			background-image: url(../img/ico/002-sesame.png)
 		}
 	}
 
