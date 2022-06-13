@@ -122,7 +122,7 @@ var _fixed_menu;
 			};
 		});
 
-		jMenuToggler.on('touchend click', function (e) {
+		jMenuToggler.on('touchstart click', function (e) {
 			e.preventDefault();
 
 			var $this = $(this);
