@@ -7940,7 +7940,7 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
   margin-bottom: 50px
 }
 #footer .site-logo {
-  background-image: url(../img/ttlogo2.png);
+  background-image: url(../img/ttlogo.png);
   background-size: 100%;
   width: 253px;
   height: 206px
