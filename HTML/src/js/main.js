@@ -89,6 +89,8 @@ var _fixed_menu;
 
 				if ( target.length )
 				{
+					console.log('bmenuopen2', bMenuOpen);
+					bMenuOpen = false
 					$('html,body').stop().animate({
 						scrollTop: target.offset().top - TopBarHeight
 					}, 1000);
@@ -96,6 +98,8 @@ var _fixed_menu;
 
 				if ( jMenuToggler.is(':visible') )
 				{
+					console.log('bmenuopen3', bMenuOpen);
+					bMenuOpen = false
 					jTopBar.removeClass('expanded');
 					jMenuToggler.removeClass('active');
 				};
@@ -107,6 +111,9 @@ var _fixed_menu;
 			{
 				if ( $this.next().is(':visible') )
 				{
+					console.log('bmenuopen4', bMenuOpen);
+					bMenuOpen = false
+
 					$parent.removeClass('drop_active');
 					$this.next().slideUp('fast');
 
@@ -116,6 +123,9 @@ var _fixed_menu;
 					$this.closest('ul').find('.submenu').slideUp('fast');
 					$parent.addClass('drop_active');
 					$this.next().slideDown('fast');
+					console.log('bmenuopen5', bMenuOpen);
+					bMenuOpen = false
+
 				};
 
 				return false;
@@ -124,22 +134,22 @@ var _fixed_menu;
 
 		jMenuToggler.on('touchstart click', function (e) {
 			e.preventDefault();
-
+			console.log('bmenuOpen', bMenuOpen);
 			var $this = $(this);
 
 			if ( bMenuOpen )
 			{
 				$this.removeClass('active');
 				jTopBar.removeClass('expanded');
-				nHtmlNode.style.overflow = '';
-				bMenuOpen = !bMenuOpen;
+				nHtmlNode.style.overflow = 'hidden scroll';
+				bMenuOpen = false;
 			}
 			else
 			{
 				$this.addClass('active');
 				jTopBar.addClass('expanded');
 				nHtmlNode.style.overflow = 'hidden scroll';
-				bMenuOpen = !bMenuOpen;
+				bMenuOpen = true;
 			}
 
 			return false;
