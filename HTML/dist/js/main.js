@@ -7603,7 +7603,7 @@ var _fixed_menu;
 
 		TopBarHeight = jMenuToggler.is(':visible') ? 70 : 80;
 
-		jLink.on('touchend click', function (e) {
+		jLink.on('touchstart click', function (e) {
 
 			var $this = $(this),
 				$parent = $this.parent();
@@ -7679,7 +7679,7 @@ var _fixed_menu;
 				jTopBar.removeClass('expanded');
 				jMenuToggler.removeClass('active');
 				jSubMenu.removeAttr('style');
-				nHtmlNode.style.overflow = '';
+				nHtmlNode.style.overflow = 'hidden scroll';
 				bMenuOpen = false;
 			}
 		}, 100));
