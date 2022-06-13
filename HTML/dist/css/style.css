@@ -3359,7 +3359,8 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: -apple-system,Raleway,sans-serif;
-  color: #777
+  color: #777;
+  overflow: hidden scroll
 }
 .pull-1 {
   right: 8.33333%

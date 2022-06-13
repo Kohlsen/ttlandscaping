@@ -10,7 +10,10 @@
 	}
 }
 
-body { @extend %pos-relative; }
+body { 
+	@extend %pos-relative;
+	overflow: hidden scroll;
+ }
 
 ul, ol
 {
