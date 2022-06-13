@@ -12,7 +12,7 @@
 
 body { 
 	@extend %pos-relative;
-	overflow: hidden scroll;
+	overflow: hidden;
  }
 
 ul, ol
