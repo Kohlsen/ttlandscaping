@@ -7668,7 +7668,7 @@ var _fixed_menu;
 			{
 				$this.removeClass('active');
 				jTopBar.removeClass('expanded');
-				nHtmlNode.style.overflow = '';
+				nHtmlNode.style.overflow = 'hidden scroll';
 				bMenuOpen = false;
 			}
 			else
@@ -7682,17 +7682,17 @@ var _fixed_menu;
 			return false;
 		});
 
-		// jWindow.on('resize', debounce(function () {
+		jWindow.on('resize', debounce(function () {
 
-		// 	if ( window.innerWidth > 767 )
-		// 	{
-		// 		jTopBar.removeClass('expanded');
-		// 		jMenuToggler.removeClass('active');
-		// 		jSubMenu.removeAttr('style');
-		// 		nHtmlNode.style.overflow = 'hidden scroll';
-		// 		bMenuOpen = false;
-		// 	}
-		// }, 100));
+			if ( window.innerWidth > 767 )
+			{
+				jTopBar.removeClass('expanded');
+				jMenuToggler.removeClass('active');
+				jSubMenu.removeAttr('style');
+				nHtmlNode.style.overflow = 'hidden scroll';
+				bMenuOpen = false;
+			}
+		}, 100));
 	};
 
 	/* owl carousel
