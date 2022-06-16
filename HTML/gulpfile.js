@@ -23,14 +23,18 @@ var gulp         = require('gulp'),
 			js:     'dist/js/',
 			style:  'dist/css/',
 			img:    'dist/img/',
-			fonts:  'dist/fonts/'
+			fonts:  'dist/fonts/',
+			mail: 	'dist/send_mail/'
 		},
 		src: {
 			html:  ['src/*.html','!src/html/template/*.html'],
-			js:    ['src/js/lib/device.js', 'src/js/lib/jquery-2.2.4.js', 'src/js/main.js'],
+			js:    ['src/js/lib/device.js', 'src/js/lib/jquery-2.2.4.js', 'src/js/main.js', 'src/js/isotope.pkgd.js'],
 			style:  'src/style/main.scss',
 			img:    'src/img/**/*.*',
 			fonts:  'src/fonts/**/*.*'
+		},
+		send_mail: {
+			send_mail: ['send_mail/contact_process.php', 'send_mail/mail.php', 'send_mail/vendor/composer/*.php']
 		},
 		watch: {
 			html:   'src/html/**/*.html',
@@ -39,6 +43,7 @@ var gulp         = require('gulp'),
 			img:    'src/img/**/*.*',
 			fonts:  'src/fonts/**/*.*'
 		},
+
 		clean: './dist'
 	};
 
@@ -63,6 +68,11 @@ gulp.task('html:build', function () {
 			indent: true
 		}))
 		.pipe(gulp.dest(`dist/`));
+});
+
+gulp.task('php:build', function () {
+	return gulp.src(path.send_mail.send_mail)
+		.pipe(gulp.dest(`dist/send_mail/`));
 });
 
 gulp.task('js:build', function ()
@@ -158,7 +168,8 @@ gulp.task('build', [
 	'js:build',
 	'style:build',
 	'fonts:build',
-	'image:build'
+	'image:build',
+	'php:build'
 ]);
 
 gulp.task('dev', [
