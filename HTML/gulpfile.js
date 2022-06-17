@@ -34,7 +34,7 @@ var gulp         = require('gulp'),
 			fonts:  'src/fonts/**/*.*'
 		},
 		send_mail: {
-			send_mail: '/send_mail/**/*.*'
+			send_mail: '/send_mail/**/*.php*'
 		},
 		watch: {
 			html:   'src/html/**/*.html',
@@ -169,6 +169,7 @@ gulp.task('build', [
 	'style:build',
 	'fonts:build',
 	'image:build',
+	// 'send_mail:build'
 ]);
 
 gulp.task('dev', [
