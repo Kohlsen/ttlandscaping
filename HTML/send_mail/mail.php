@@ -19,8 +19,8 @@ function sendMail($name, $email, $phone, $subject, $message) {
 		$mail->SMTPAuth = true;                               // Enable SMTP authenication
 		$mail->Username = 'jimmy@toptierlandscapingkc.com';             // SMTP username
 		$mail->Password = 'UMKCRoos123';                    // SMTP password
-		$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-		$mail->Port = 465;                                    // TCP port to connect to
+		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+		$mail->Port = 587;                                    // TCP port to connect to
 
 		//Recipients
 		$recipientEmail = 'jimmy@toptierlandscapingkc.com';
