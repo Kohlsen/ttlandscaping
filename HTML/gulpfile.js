@@ -24,7 +24,7 @@ var gulp         = require('gulp'),
 			style:  'dist/css/',
 			img:    'dist/img/',
 			fonts:  'dist/fonts/',
-			mail: 	'dist/send_mail/'
+			send_mail: 	'dist/send_mail/'
 		},
 		src: {
 			html:  ['src/*.html','!src/html/template/*.html'],
@@ -34,7 +34,7 @@ var gulp         = require('gulp'),
 			fonts:  'src/fonts/**/*.*'
 		},
 		send_mail: {
-			send_mail: ['send_mail/contact_process.php', 'send_mail/mail.php', 'send_mail/vendor/composer/*.php']
+			send_mail: '/send_mail/**/*.*'
 		},
 		watch: {
 			html:   'src/html/**/*.html',
@@ -70,9 +70,9 @@ gulp.task('html:build', function () {
 		.pipe(gulp.dest(`dist/`));
 });
 
-gulp.task('php:build', function () {
-	return gulp.src(path.send_mail.send_mail)
-		.pipe(gulp.dest(`dist/send_mail/`));
+gulp.task('send_mail:build', function () {
+	return gulp.src(path.send_mail)
+		.pipe(gulp.dest(path.dist.send_mail));
 });
 
 gulp.task('js:build', function ()
@@ -169,12 +169,12 @@ gulp.task('build', [
 	'style:build',
 	'fonts:build',
 	'image:build',
-	'php:build'
 ]);
 
 gulp.task('dev', [
 	'clean',
 	'html:build',
+	'send_mail:build',
 	'js:dev',
 	'style:dev',
 	'fonts:build',
