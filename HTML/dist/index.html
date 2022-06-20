@@ -1173,9 +1173,13 @@
 						+ "<br> Email: " + document.getElementById("email").value
 						+ "<br> Phone: " + document.getElementById("phone").value
 						+ "<br> Message: " + document.getElementById("message").value
-			}).then(
-			message => alert(message)
-			);
+			}).then((message) => {
+				if (message === 'OK') {
+					alert('Message Sent! We will reach out to you shortly.');
+				} else {
+					alert('Something went wrong.. Please try again or email jimmy@toptierlandscapingkc.com for more information.')
+				}
+			});
 			}
 		</script>
 		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
