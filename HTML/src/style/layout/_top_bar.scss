@@ -41,7 +41,12 @@
 	}
 	@include max-screen($md-width) {
 		&__logo {
-			display: none;
+			float: left;
+			display: block;
+			height: 67px;
+			background: url(../img/ttlogo2.png) 0 0/55%;
+			object-fit: contain;
+			background-repeat: no-repeat;
 		}
 	}
 

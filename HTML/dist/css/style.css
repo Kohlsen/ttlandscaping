@@ -6582,7 +6582,12 @@ form.f1 button[type=submit].custom-btn.primary:not(:hover):not(:focus) {
 }
 @media only screen and (max-width:768px) {
   #top-bar__logo {
-    display: none
+    float: left;
+    display: block;
+    height: 67px;
+    background: url(../img/ttlogo2.png) 0 0/55% no-repeat;
+    -o-object-fit: contain;
+       object-fit: contain
   }
 }
 #top-bar__navigation-toggler {
