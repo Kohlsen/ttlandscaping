@@ -1072,21 +1072,21 @@
 								<form onsubmit="sendEmail(); reset(); return false;" class="f1 ">
 									<label class="input-wrp">
 										<i class="fontello-user"></i>
-										<input id="name" class="textfield" type="text" placeholder="Your name" name="name" required/>
+										<input id="name" class="textfield" type="text" placeholder="John Smith" name="name" required/>
 									</label>
 									<label class="input-wrp">
 										<i class="fontello-mobile"></i>
-										<input id="phone" class="textfield" type="tel" placeholder="Your phone number" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+										<input id="phone" class="textfield" type="tel" placeholder="(913)555-1234" name="phone" required />
 									</label>
 
 									<label class="input-wrp">
 										<i class="fontello-mail"></i>
-										<input id="email" class="textfield" type="text" placeholder="E-mail" name="email" />
+										<input id="email" class="textfield" type="text" placeholder="johnsmith@gmail.com" name="email" />
 									</label>
 
 									<label class="input-wrp">
 										<i class="fontello-comment"></i>
-										<textarea id="message" class="textfield" placeholder="Comment" name="message"></textarea>
+										<textarea id="message" class="textfield" placeholder="Inquiring about landscaping services" name="message"></textarea>
 									</label>
 
 									<div class="btn-wrp">
@@ -1163,9 +1163,6 @@
 			function sendEmail() {
 				Email.send({
 				SecureToken: "043414a8-bb5f-4ffd-904d-6a2bdf4da405",
-				// Host : "smtp.elasticemail.com",
-				// Username : "sleepxans@gmail.com",
-				// Password : "C954CAE49746F25ACEC1BA1F9568DE6C7F1F",
 				To : 'jimmy@toptierlandscapingkc.com',
 				From : "sleepxans@gmail.com",
 				Subject : "New Contact Form Inquiry",
