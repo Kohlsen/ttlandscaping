@@ -8,11 +8,11 @@
 	// is called before reCAPTCHA is loaded, the callback function that is passed
 	// by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
 	// loaded.
-	if(typeof grecaptcha === 'undefined') {
-		grecaptcha = {};
+	if(typeof window.grecaptcha === 'undefined') {
+		window.grecaptcha = {};
 	}
-	grecaptcha.ready = function(cb){
-		if(typeof grecaptcha === 'undefined') {
+	window.grecaptcha.ready = function(cb){
+		if(typeof window.grecaptcha === 'undefined') {
 		// window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
 		// configuration. By default, any functions listed in its 'fns' property
 		// are automatically executed when reCAPTCHA loads.
@@ -25,8 +25,8 @@
 	}
 
 	// Usage
-	grecaptcha.ready(function(){
-		grecaptcha.render("container", {
+	window.grecaptcha.ready(function(){
+		window.grecaptcha.render("container", {
 		sitekey: "6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK"
 		});
 	});
@@ -1099,7 +1099,7 @@
 									<p class="item__subtitle">Reach out to us to learn more about how we can help you!</p>
 								</header>
 								
-								<form onsubmit="sendEmail(); reset(); return false;" id='tt-contact-from' class="f1 ">
+								<form onsubmit="sendEmail(); reset(); return false;" id='tt-contact-form' class="f1 ">
 									<label class="input-wrp">
 										<i class="fontello-user"></i>
 										<input id="name" class="textfield" type="text" placeholder="John Smith" name="name" required/>
@@ -1250,7 +1250,10 @@
 		</script>
 		 <script>
 			function onSubmit(token) {
-			  document.getElementById("tt-contact-from").submit();
+			//   document.getElementById("tt-contact-form").submit();
+				sendEmail();
+				reset();
+				return false;
 			  
 			}
 		  </script>
