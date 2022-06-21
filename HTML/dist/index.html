@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" style="overflow: hidden scroll;">
-	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-	// How this code snippet works:
-	// This logic overwrites the default behavior of `grecaptcha.ready()` to
-	// ensure that it can be safely called at any time. When `grecaptcha.ready()`
-	// is called before reCAPTCHA is loaded, the callback function that is passed
-	// by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
-	// loaded.
-	if(typeof window.grecaptcha === 'undefined') {
-		window.grecaptcha = {};
-	}
-	window.grecaptcha.ready = function(cb){
-		if(typeof window.grecaptcha === 'undefined') {
-		// window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
-		// configuration. By default, any functions listed in its 'fns' property
-		// are automatically executed when reCAPTCHA loads.
-		const c = '___grecaptcha_cfg';
-		window[c] = window[c] || {};
-		(window[c]['fns'] = window[c]['fns']||[]).push(cb);
-		} else {
-		cb();
-		}
-	}
 
-	// Usage
-	window.grecaptcha.ready(function(){
-		window.grecaptcha.render("container", {
-		sitekey: "6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK"
-		});
-	});
-	</script>
 	<head>
 		<title>Top Tier Landscaping</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -1098,8 +1068,8 @@
 
 									<p class="item__subtitle">Reach out to us to learn more about how we can help you!</p>
 								</header>
-								
-								<form onsubmit="sendEmail(); reset(); return false;" id='tt-contact-form' class="f1 ">
+
+								<form onsubmit="sendEmail(); reset(); return false;" class="f1 ">
 									<label class="input-wrp">
 										<i class="fontello-user"></i>
 										<input id="name" class="textfield" type="text" placeholder="John Smith" name="name" required/>
@@ -1119,20 +1089,22 @@
 										<textarea id="message" class="textfield" placeholder="Inquiring about landscaping services" name="message"></textarea>
 									</label>
 
+									<div class="btn-wrp">
+										<button 
+										class="custom-btn long" 
+										type="submit" 
+										role="button"
+										class="g-recaptcha" 
+										data-sitekey="6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK" 
+										data-callback='onSubmit' 
+										data-action='submit'
+										>
+										Send a message
+									</button>
+									</div>
+
 									<div class="form__note"></div>
 								</form>
-								<div class="btn-wrp">
-									<button 
-									class="custom-btn long" 
-									role="button"
-									class="g-recaptcha" 
-									data-sitekey="6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK" 
-									data-callback='onSubmit' 
-									data-action='submit'
-									>
-									Send a message
-								</button>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -1194,14 +1166,20 @@
 		<div id="btn-to-top-wrap">
 			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="1000"></a>
 		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script>
 			function sendEmail() {
-				Email.send({
-				SecureToken: "043414a8-bb5f-4ffd-904d-6a2bdf4da405",
+				var num = document.getElementById('phone').value;
+				var a7c745 = ' bdc7747b-e5b7-462c-9fbe-efe67f0eab0b'
+				if (!num) {
+					return true;
+				} else {
+					Email.send({
+				SecureToken: a7c745,
 				To : 'jimmy@toptierlandscapingkc.com',
-				From : "sleepxans@gmail.com",
+				From : "ttlandscapingkccontact@gmail.com",
 				Subject : "New Contact Form Inquiry",
 				Body : "Name: " + document.getElementById("name").value
 						+ "<br> Email: " + document.getElementById("email").value
@@ -1214,6 +1192,7 @@
 					alert('Something went wrong.. Please try again or email jimmy@toptierlandscapingkc.com for more information.')
 				}
 			});
+				}
 			}
 		</script>
 		<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
@@ -1248,13 +1227,10 @@
 				};
 			});
 		</script>
+		 <script src="https://www.google.com/recaptcha/api.js"></script>
 		 <script>
 			function onSubmit(token) {
-			//   document.getElementById("tt-contact-form").submit();
-				sendEmail();
-				reset();
-				return false;
-			  
+			  document.getElementById("tt-contact-from").submit();
 			}
 		  </script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
