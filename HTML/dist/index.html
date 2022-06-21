@@ -49,6 +49,8 @@
 			var _html = document.documentElement;
 			_html.className = _html.className.replace("no-js","js");
 		</script>
+ 	<script src="https://www.google.com/recaptcha/api.js"></script>
+
 		<script type="text/javascript" src="js/device.min.js"></script>
 	</head>
 	<body class="page page-landing">
@@ -1068,8 +1070,8 @@
 
 									<p class="item__subtitle">Reach out to us to learn more about how we can help you!</p>
 								</header>
-
-								<form onsubmit="sendEmail(); reset(); return false;" class="f1 ">
+								<!--onsubmit="sendEmail(); reset(); return false;"-->
+								<form id='tt-contact-from' class="f1 ">
 									<label class="input-wrp">
 										<i class="fontello-user"></i>
 										<input id="name" class="textfield" type="text" placeholder="John Smith" name="name" required/>
@@ -1090,7 +1092,16 @@
 									</label>
 
 									<div class="btn-wrp">
-										<button class="custom-btn long" type="submit" role="button">Send a message</button>
+										<button 
+										class="custom-btn long" 
+										role="button"
+										class="g-recaptcha" 
+										data-sitekey="6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK" 
+										data-callback='onSubmit' 
+										data-action='submit'
+										>
+										Send a message
+									</button>
 									</div>
 
 									<div class="form__note"></div>
@@ -1211,6 +1222,14 @@
 				};
 			});
 		</script>
+		 <script>
+			function onSubmit(token) {
+			//   document.getElementById("tt-contact-from").submit();
+			  sendEmail();
+			  reset();
+			  return false;
+			}
+		  </script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
