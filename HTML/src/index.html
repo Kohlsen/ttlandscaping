@@ -49,8 +49,6 @@
 			var _html = document.documentElement;
 			_html.className = _html.className.replace("no-js","js");
 		</script>
- 	<script src="https://www.google.com/recaptcha/api.js"></script>
-
 		<script type="text/javascript" src="js/device.min.js"></script>
 	</head>
 	<body class="page page-landing">
@@ -1070,8 +1068,8 @@
 
 									<p class="item__subtitle">Reach out to us to learn more about how we can help you!</p>
 								</header>
-								<!--onsubmit="sendEmail(); reset(); return false;"-->
-								<form id='tt-contact-from' class="f1 ">
+								
+								<form onsubmit="sendEmail(); reset(); return false;" id='tt-contact-from' class="f1 ">
 									<label class="input-wrp">
 										<i class="fontello-user"></i>
 										<input id="name" class="textfield" type="text" placeholder="John Smith" name="name" required/>
@@ -1091,21 +1089,20 @@
 										<textarea id="message" class="textfield" placeholder="Inquiring about landscaping services" name="message"></textarea>
 									</label>
 
-									<div class="btn-wrp">
-										<button 
-										class="custom-btn long" 
-										role="button"
-										class="g-recaptcha" 
-										data-sitekey="6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK" 
-										data-callback='onSubmit' 
-										data-action='submit'
-										>
-										Send a message
-									</button>
-									</div>
-
 									<div class="form__note"></div>
 								</form>
+								<div class="btn-wrp">
+									<button 
+									class="custom-btn long" 
+									role="button"
+									class="g-recaptcha" 
+									data-sitekey="6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK" 
+									data-callback='onSubmit' 
+									data-action='submit'
+									>
+									Send a message
+								</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1167,6 +1164,37 @@
 		<div id="btn-to-top-wrap">
 			<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="1000"></a>
 		</div>
+		<script async src="https://www.google.com/recaptcha/api.js"></script>
+		<script>
+		// How this code snippet works:
+		// This logic overwrites the default behavior of `grecaptcha.ready()` to
+		// ensure that it can be safely called at any time. When `grecaptcha.ready()`
+		// is called before reCAPTCHA is loaded, the callback function that is passed
+		// by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
+		// loaded.
+		if(typeof grecaptcha === 'undefined') {
+			grecaptcha = {};
+		}
+		grecaptcha.ready = function(cb){
+			if(typeof grecaptcha === 'undefined') {
+			// window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
+			// configuration. By default, any functions listed in its 'fns' property
+			// are automatically executed when reCAPTCHA loads.
+			const c = '___grecaptcha_cfg';
+			window[c] = window[c] || {};
+			(window[c]['fns'] = window[c]['fns']||[]).push(cb);
+			} else {
+			cb();
+			}
+		}
+
+		// Usage
+		grecaptcha.ready(function(){
+			grecaptcha.render("container", {
+			sitekey: "6Lf3NIggAAAAAFOuemLCJOFKg5qcQk7LN95kGXkK"
+			});
+		});
+		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -1224,10 +1252,8 @@
 		</script>
 		 <script>
 			function onSubmit(token) {
-			//   document.getElementById("tt-contact-from").submit();
-			  sendEmail();
-			  reset();
-			  return false;
+			  document.getElementById("tt-contact-from").submit();
+			  
 			}
 		  </script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
