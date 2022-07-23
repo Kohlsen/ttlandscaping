@@ -202,6 +202,100 @@ var _fixed_menu;
 		};
 	};
 
+	function _products_carousel ()
+	{
+		var pdslider = $('.products--slider');
+
+		if ( pdslider.length > 0 )
+		{
+			pdslider.children('.products-carousel').owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 6000,
+				autoplayHoverPause: true,
+				autoHeight: true,
+				smartSpeed: 1000,
+				margin: 30,
+				navText: [
+					'<i class="fa fa-angle-left"></i>',
+					'<i class="fa fa-angle-right"></i>'
+				],
+				responsive: {
+					0:{
+						items:1
+					},
+					992:{
+						items:1
+					}
+				}
+			});
+		};
+	};
+	function _retaining_carousel ()
+	{
+		var pdslider = $('.retaining--slider');
+
+		if ( pdslider.length > 0 )
+		{
+			pdslider.children('.retaining-carousel').owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 6000,
+				autoplayHoverPause: true,
+				autoHeight: true,
+				smartSpeed: 1000,
+				margin: 30,
+				navText: [
+					'<i class="fa fa-angle-left"></i>',
+					'<i class="fa fa-angle-right"></i>'
+				],
+				responsive: {
+					0:{
+						items:1
+					},
+					992:{
+						items:1
+					}
+				}
+			});
+		};
+	};
+	function _landscaping_carousel ()
+	{
+		var pdslider = $('.landscaping--slider');
+
+		if ( pdslider.length > 0 )
+		{
+			pdslider.children('.landscaping-carousel').owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 6000,
+				autoplayHoverPause: true,
+				autoHeight: true,
+				smartSpeed: 1000,
+				margin: 30,
+				navText: [
+					'<i class="fa fa-angle-left"></i>',
+					'<i class="fa fa-angle-right"></i>'
+				],
+				responsive: {
+					0:{
+						items:1
+					},
+					992:{
+						items:1
+					}
+				}
+			});
+		};
+	};
+
 	/* isotope sorting
 	================================================== */
 	function _isotope_sorting ()
@@ -502,6 +596,9 @@ var _fixed_menu;
 		/* owl carousel
 		================================================== */
 		_owl_carousel();
+		_products_carousel();
+		_landscaping_carousel();
+		_retaining_carousel();
 
 		/* isotopeSort
 		================================================== */
