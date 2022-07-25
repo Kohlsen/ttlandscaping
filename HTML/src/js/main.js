@@ -74,7 +74,7 @@ var _fixed_menu;
 
 		if ( jSubMenu.length ) { jSubMenu.parents('li').addClass('has-children'); };
 
-		TopBarHeight = jMenuToggler.is(':visible') ? 70 : 80;
+		TopBarHeight = jMenuToggler.is(':visible') ? 80 : 80;
 
 		jLink.on('touchstart click', function (e) {
 
@@ -214,7 +214,7 @@ var _fixed_menu;
 				dots: true,
 				autoplay: false,
 				autoplayTimeout: 6000,
-				autoplayHoverPause: true,
+				autoplayHoverPause: false,
 				autoHeight: true,
 				smartSpeed: 1000,
 				margin: 30,
@@ -245,7 +245,7 @@ var _fixed_menu;
 				dots: true,
 				autoplay: false,
 				autoplayTimeout: 6000,
-				autoplayHoverPause: true,
+				autoplayHoverPause: false,
 				autoHeight: true,
 				smartSpeed: 1000,
 				margin: 30,
@@ -276,7 +276,7 @@ var _fixed_menu;
 				dots: true,
 				autoplay: false,
 				autoplayTimeout: 6000,
-				autoplayHoverPause: true,
+				autoplayHoverPause: false,
 				autoHeight: true,
 				smartSpeed: 1000,
 				margin: 30,
